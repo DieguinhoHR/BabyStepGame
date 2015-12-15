@@ -6,4 +6,8 @@ public class JogoDaVelha {
 	public void inserirBola(int i, int j) {
 		velha[i][j] = 1;
 	}
+
+	public void inserirXis(int i, int j) {
+		velha[i][j] = 2;		
+	}
 }

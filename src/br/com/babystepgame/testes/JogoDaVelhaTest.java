@@ -20,4 +20,10 @@ public class JogoDaVelhaTest {
 		assertEquals(1, jogoDaVelha.velha[0][0]);				
 	}
 
+	@Test
+	public void testDeveInserirXisNaPosicao00() {
+		jogoDaVelha.inserirXis(0, 0);
+		
+		assertEquals(2, jogoDaVelha.velha[0][0]);				
+	}	
 }

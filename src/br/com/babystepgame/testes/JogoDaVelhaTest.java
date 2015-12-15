@@ -79,7 +79,29 @@ public class JogoDaVelhaTest {
 		jogoDaVelha.inserirBola(0, 1);
 		jogoDaVelha.inserirBola(0, 2);
 		
-		boolean verificarBola = jogoDaVelha.verificarBolaPrimeiraLinha();		
+		boolean verificarBola = jogoDaVelha.verificarBolaLinha();		
 		assertTrue(verificarBola);
 	}
+	
+	@Test
+	public void testDeveVerificarSeASegundalinhaContemSomenteBola() {		
+		jogoDaVelha.inserirBola(1, 0);
+		jogoDaVelha.inserirBola(1, 1);
+		jogoDaVelha.inserirBola(1, 2);
+		
+		boolean verificarBola = jogoDaVelha.verificarBolaLinha();		
+		assertTrue(verificarBola);
+	}
+	
+	/*
+	@Test
+	public void testDeveVerificarSeATerceiralinhaContemSomenteBola() {		
+		jogoDaVelha.inserirBola(2, 0);
+		jogoDaVelha.inserirBola(2, 1);
+		jogoDaVelha.inserirBola(2, 2);
+		
+		boolean verificarBola = jogoDaVelha.verificarBolaLinha();		
+		assertTrue(verificarBola);
+	}
+	*/	
 }

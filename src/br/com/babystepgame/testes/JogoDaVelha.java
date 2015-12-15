@@ -39,17 +39,12 @@ public class JogoDaVelha {
 		return true;		
 	}
 
-	public boolean verificarBolaPrimeiraLinha() {
-		
-		if(velha[0][0] != 1)
-			return false;
-				
-		if(velha[0][1] != 1)
-			return false;
-		
-		if(velha[0][2] != 1)
-			return false;		
-		
-		return true;
+	public boolean verificarBolaLinha() {
+		for (int i = 0; i < 2; i++) {
+			if(velha[i][0] == 1 && velha[i][1] == 1 && velha[i][2] == 1)
+				return true;
+		}
+
+		return false;
 	}
 }

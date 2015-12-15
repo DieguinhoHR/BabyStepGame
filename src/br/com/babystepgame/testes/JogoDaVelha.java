@@ -40,51 +40,49 @@ public class JogoDaVelha {
 	}
 	
 	public boolean verificaBolaLinhaColuna() {
-		if(verificarBolaColuna())
+		if(verificarBolaColuna(1))
 			return true;
 		
-		if(verificarBolaLinha())
+		if(verificarBolaLinha(1))
 			return true;		
 		
-		if(verificaPrimeiraDiagonal())
+		if(verificaPrimeiraDiagonal(1))
 			return true;
 		
-		if(verificaSegundaDiagonal())
+		if(verificaSegundaDiagonal(1))
 			return true;		
 
 		return false;
 	}
-
-	private boolean verificarBolaLinha() {
+	
+	private boolean verificarBolaLinha(int peca) {
 		for (int i = 0; i <= 2; i++) {
-			if(velha[i][0] == 1 && velha[i][1] == 1 && velha[i][2] == 1)
+			if(velha[i][0] == peca && velha[i][1] == peca && velha[i][2] == peca)
 				return true;
 		}
 		return false;
 	}
 	
-	private boolean verificarBolaColuna() {
+	private boolean verificarBolaColuna(int peca) {
 		for (int i = 0; i <= 2; i++) {
-			if(velha[0][i] == 1 && velha[1][i] == 1 && velha[2][i] == 1)
+			if(velha[0][i] == peca && velha[1][i] == peca && velha[2][i] == peca)
 				return true;
 		}
 		return false;
 	}
 
-	private boolean verificaPrimeiraDiagonal() {
-		
+	private boolean verificaPrimeiraDiagonal(int peca) {		
 		for (int i = 0; i <= 2; i++) {
-			if(velha[i][i] == 1 && velha[i][i] == 1 && velha[i][i] == 1)
+			if(velha[i][i] == peca && velha[i][i] == peca && velha[i][i] == peca)
 				return true;
 		}
 		return false;
 	}	
 	
-	private boolean verificaSegundaDiagonal() {
-		
+	private boolean verificaSegundaDiagonal(int peca) {		
 		int j=2;
 		for (int i = 0; i <= 2; i++) {
-			if(velha[i][j] == 1 && velha[i][j] == 1 && velha[i][j] == 1)
+			if(velha[i][j] == peca && velha[i][j] == peca && velha[i][j] == peca)
 				return true;
 			j--;
 		}

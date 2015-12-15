@@ -61,9 +61,8 @@ public class JogoDaVelhaTest {
 		assertFalse(retornoDoInserirXis);					
 	}	
 	
-	/*
 	@Test
-	public void testDeveInserirBolaDentroDaMatrizL() {		
+	public void testDeveInserirBolaDentroDaMatrizI() {		
 		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(2, 0);		
 		assertTrue(retornoDoInserirXis);					
 	}
@@ -72,6 +71,10 @@ public class JogoDaVelhaTest {
 	public void testDeveInserirBolaDentroDaMatrizJ() {		
 		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(0, 2);		
 		assertTrue(retornoDoInserirXis);					
-	}	
-	*/
+	}
+	
+	
+	
+	
+
 }

@@ -26,19 +26,19 @@ public class JogoDaVelhaTest {
 	}	
 	
 	@Test
-	public void testDeveInserirXisForaDaMatrizJ() {		
+	public void testDeveInserirXisForaDaMatrizI() {		
 		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(4, 0);		
 		assertFalse(retornoDoInserirXis);					
 	}	
 	
 	@Test
-	public void testDeveInserirXisNaMatrizL() {		
+	public void testDeveInserirXisNaMatrizJ() {		
 		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(0, 4);		
 		assertFalse(retornoDoInserirXis);					
 	}	
 	
 	@Test
-	public void testDeveInserirXisDentroDaMatrizL() {		
+	public void testDeveInserirXisDentroDaMatrizI() {		
 		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(2, 0);		
 		assertTrue(retornoDoInserirXis);					
 	}
@@ -55,13 +55,13 @@ public class JogoDaVelhaTest {
 		assertFalse(retornoDoInserirXis);					
 	}
 	
-	/*
 	@Test
-	public void testDeveInserirBolaNaMatrizL() {		
-		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(0, 4);		
+	public void testDeveInserirBolaForaDaMatrizJ() {		
+		boolean retornoDoInserirXis = jogoDaVelha.inserirBola(0, 4);		
 		assertFalse(retornoDoInserirXis);					
 	}	
 	
+	/*
 	@Test
 	public void testDeveInserirBolaDentroDaMatrizL() {		
 		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(2, 0);		

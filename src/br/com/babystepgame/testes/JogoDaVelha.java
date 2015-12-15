@@ -1,7 +1,9 @@
 package br.com.babystepgame.testes;
 
 public class JogoDaVelha {
-	public int inserirValorNaMatriz() {
-		return 0;		
+	int [][] velha = {{0, 0, 0}, { 0, 0, 0}, { 0, 0, 0}};	
+	
+	public void inserirBola(int i, int j) {
+		velha[i][j] = 1;
 	}
 }

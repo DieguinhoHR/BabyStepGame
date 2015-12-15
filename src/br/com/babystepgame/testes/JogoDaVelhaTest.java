@@ -129,7 +129,20 @@ public class JogoDaVelhaTest {
 		jogoDaVelha.inserirBola(1, 2);
 		jogoDaVelha.inserirBola(2, 2);
 		
-		boolean verificarBola = jogoDaVelha.verificarBolaColuna();		
+		boolean verificarBola = jogoDaVelha.verificaBolaLinhaColuna();		
 		assertTrue(verificarBola);
 	}
+	
+	
+	@Test
+	public void testDeveVerificarSeAPrimeiraDiagonal() {		
+		jogoDaVelha.inserirBola(0, 0);
+		jogoDaVelha.inserirBola(1, 1);
+		jogoDaVelha.inserirBola(2, 2);
+		
+		boolean verificarBola = jogoDaVelha.verificaPrimeiraDiagonal();		
+		assertTrue(verificarBola);
+	}
+	
+	
 }

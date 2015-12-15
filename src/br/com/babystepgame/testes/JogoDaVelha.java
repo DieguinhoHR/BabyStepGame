@@ -38,23 +38,19 @@ public class JogoDaVelha {
 		
 		return true;		
 	}
-
-	public boolean verificarBolaLinha() {
-		for (int i = 0; i <= 2; i++) {
-			if(velha[i][0] == 1 && velha[i][1] == 1 && velha[i][2] == 1)
-				return true;
-		}
-
-		return false;
-	}
 	
-	public boolean verificarBolaColuna() {
-		for (int i = 0; i <= 2; i++) {
-			if(velha[0][i] == 1 && velha[1][i] == 1 && velha[2][i] == 1)
-				return true;
-		}
-		return false;
-	}	
+	public boolean verificaPrimeiraDiagonal() {
+		if (velha[0][0] != 1)
+			return false;
+		
+		if (velha[1][1] != 1)
+			return false;
+
+		if (velha[2][2] != 1)
+			return false;
+		
+		return true;
+	}
 	
 	public boolean verificaBolaLinhaColuna() {
 		if (verificarBolaColuna() == false)
@@ -62,4 +58,20 @@ public class JogoDaVelha {
 		
 		return true;
 	}
+
+	private boolean verificarBolaLinha() {
+		for (int i = 0; i <= 2; i++) {
+			if(velha[i][0] == 1 && velha[i][1] == 1 && velha[i][2] == 1)
+				return true;
+		}
+		return false;
+	}
+	
+	private boolean verificarBolaColuna() {
+		for (int i = 0; i <= 2; i++) {
+			if(velha[0][i] == 1 && velha[1][i] == 1 && velha[2][i] == 1)
+				return true;
+		}
+		return false;
+	}		
 }

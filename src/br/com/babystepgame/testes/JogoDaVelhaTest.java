@@ -102,4 +102,34 @@ public class JogoDaVelhaTest {
 		boolean verificarBola = jogoDaVelha.verificarBolaLinha();		
 		assertTrue(verificarBola);
 	}	
+	
+	@Test
+	public void testDeveVerificarSeAPrimeiraColunaContemSomenteBola() {		
+		jogoDaVelha.inserirBola(0, 0);
+		jogoDaVelha.inserirBola(1, 0);
+		jogoDaVelha.inserirBola(2, 0);
+		
+		boolean verificarBola = jogoDaVelha.verificarBolaColuna();		
+		assertTrue(verificarBola);
+	}
+	
+	@Test
+	public void testDeveVerificarSeASegundaColunaContemSomenteBola() {		
+		jogoDaVelha.inserirBola(0, 1);
+		jogoDaVelha.inserirBola(1, 1);
+		jogoDaVelha.inserirBola(2, 1);
+		
+		boolean verificarBola = jogoDaVelha.verificarBolaColuna();		
+		assertTrue(verificarBola);
+	}
+	
+	@Test
+	public void testDeveVerificarSeATerceiraColunaContemSomenteBola() {		
+		jogoDaVelha.inserirBola(0, 2);
+		jogoDaVelha.inserirBola(1, 2);
+		jogoDaVelha.inserirBola(2, 2);
+		
+		boolean verificarBola = jogoDaVelha.verificarBolaColuna();		
+		assertTrue(verificarBola);
+	}
 }

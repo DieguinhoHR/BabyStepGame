@@ -40,7 +40,7 @@ public class JogoDaVelha {
 	}
 
 	public boolean verificarBolaLinha() {
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i <= 2; i++) {
 			if(velha[i][0] == 1 && velha[i][1] == 1 && velha[i][2] == 1)
 				return true;
 		}

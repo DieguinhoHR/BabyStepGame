@@ -93,7 +93,6 @@ public class JogoDaVelhaTest {
 		assertTrue(verificarBola);
 	}
 	
-	/*
 	@Test
 	public void testDeveVerificarSeATerceiralinhaContemSomenteBola() {		
 		jogoDaVelha.inserirBola(2, 0);
@@ -102,6 +101,5 @@ public class JogoDaVelhaTest {
 		
 		boolean verificarBola = jogoDaVelha.verificarBolaLinha();		
 		assertTrue(verificarBola);
-	}
-	*/	
+	}	
 }

@@ -144,5 +144,13 @@ public class JogoDaVelhaTest {
 		assertTrue(verificarBola);
 	}
 	
-	
+	@Test
+	public void testDeveVerificarSeASegundaDiagonal() {		
+		jogoDaVelha.inserirBola(0, 2);
+		jogoDaVelha.inserirBola(1, 1);
+		jogoDaVelha.inserirBola(2, 0);
+		
+		boolean verificarBola = jogoDaVelha.verificaSegundaDiagonal();		
+		assertTrue(verificarBola);
+	}	
 }

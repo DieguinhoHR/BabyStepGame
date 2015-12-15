@@ -39,19 +39,6 @@ public class JogoDaVelha {
 		return true;		
 	}
 	
-	public boolean verificaPrimeiraDiagonal() {
-		if (velha[0][0] != 1)
-			return false;
-		
-		if (velha[1][1] != 1)
-			return false;
-
-		if (velha[2][2] != 1)
-			return false;
-		
-		return true;
-	}
-	
 	public boolean verificaBolaLinhaColuna() {
 		if (verificarBolaColuna() == false)
 			return verificarBolaLinha();
@@ -73,5 +60,31 @@ public class JogoDaVelha {
 				return true;
 		}
 		return false;
+	}
+
+	public boolean verificaPrimeiraDiagonal() {
+		if (velha[0][0] != 1)
+			return false;
+		
+		if (velha[1][1] != 1)
+			return false;
+
+		if (velha[2][2] != 1)
+			return false;
+		
+		return true;
+	}	
+	
+	public boolean verificaSegundaDiagonal() {
+		if (velha[0][2] != 1)
+			return false;
+		
+		if (velha[1][1] != 1)
+			return false;
+
+		if (velha[2][0] != 1)
+			return false;
+		
+		return true;
 	}		
 }

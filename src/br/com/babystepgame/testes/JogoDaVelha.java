@@ -38,4 +38,8 @@ public class JogoDaVelha {
 		
 		return true;		
 	}
+
+	public boolean verificarBolaPrimeiraLinha() {
+		return true;
+	}
 }

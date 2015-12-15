@@ -73,8 +73,9 @@ public class JogoDaVelhaTest {
 		assertTrue(retornoDoInserirXis);					
 	}
 	
-	
-	
-	
-
+	@Test
+	public void testDeveVerificarSeAPrimeiralinhaContemBola() {		
+		boolean verificarBola = jogoDaVelha.verificarBolaPrimeiraLinha();		
+		assertTrue(verificarBola);					
+	}
 }

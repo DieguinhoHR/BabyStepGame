@@ -87,5 +87,21 @@ public class JogoDaVelha {
 			j--;
 		}
 		return false;				
+	}
+
+	public boolean verificaXisLinhaColuna() {		
+		if(verificarBolaColuna(2))
+			return true;
+		
+		if(verificarBolaLinha(2))
+			return true;		
+		
+		if(verificaPrimeiraDiagonal(2))
+			return true;
+		
+		if(verificaSegundaDiagonal(2))
+			return true;		
+
+		return false;		
 	}		
 }

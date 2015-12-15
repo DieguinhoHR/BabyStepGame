@@ -140,7 +140,7 @@ public class JogoDaVelhaTest {
 		jogoDaVelha.inserirBola(1, 1);
 		jogoDaVelha.inserirBola(2, 2);
 		
-		boolean verificarBola = jogoDaVelha.verificaPrimeiraDiagonal();		
+		boolean verificarBola = jogoDaVelha.verificaBolaLinhaColuna();		
 		assertTrue(verificarBola);
 	}
 	
@@ -150,7 +150,7 @@ public class JogoDaVelhaTest {
 		jogoDaVelha.inserirBola(1, 1);
 		jogoDaVelha.inserirBola(2, 0);
 		
-		boolean verificarBola = jogoDaVelha.verificaSegundaDiagonal();		
+		boolean verificarBola = jogoDaVelha.verificaBolaLinhaColuna();		
 		assertTrue(verificarBola);
 	}	
 }

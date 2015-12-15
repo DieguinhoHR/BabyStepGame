@@ -40,10 +40,19 @@ public class JogoDaVelha {
 	}
 	
 	public boolean verificaBolaLinhaColuna() {
-		if (verificarBolaColuna() == false)
-			return verificarBolaLinha();
+		if(verificarBolaColuna())
+			return true;
 		
-		return true;
+		if(verificarBolaLinha())
+			return true;		
+		
+		if(verificaPrimeiraDiagonal())
+			return true;
+		
+		if(verificaSegundaDiagonal())
+			return true;		
+
+		return false;
 	}
 
 	private boolean verificarBolaLinha() {
@@ -62,7 +71,7 @@ public class JogoDaVelha {
 		return false;
 	}
 
-	public boolean verificaPrimeiraDiagonal() {
+	private boolean verificaPrimeiraDiagonal() {
 		
 		for (int i = 0; i <= 2; i++) {
 			if(velha[i][i] == 1 && velha[i][i] == 1 && velha[i][i] == 1)
@@ -71,7 +80,7 @@ public class JogoDaVelha {
 		return false;
 	}	
 	
-	public boolean verificaSegundaDiagonal() {
+	private boolean verificaSegundaDiagonal() {
 		
 		int j=2;
 		for (int i = 0; i <= 2; i++) {

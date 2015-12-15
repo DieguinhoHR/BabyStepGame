@@ -53,7 +53,13 @@ public class JogoDaVelha {
 			if(velha[0][i] == 1 && velha[1][i] == 1 && velha[2][i] == 1)
 				return true;
 		}
-
 		return false;
 	}	
+	
+	public boolean verificaBolaLinhaColuna() {
+		if (verificarBolaColuna() == false)
+			return verificarBolaLinha();
+		
+		return true;
+	}
 }

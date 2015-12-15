@@ -74,8 +74,12 @@ public class JogoDaVelhaTest {
 	}
 	
 	@Test
-	public void testDeveVerificarSeAPrimeiralinhaContemBola() {		
+	public void testDeveVerificarSeAPrimeiralinhaContemSomenteBola() {		
+		jogoDaVelha.inserirBola(0, 0);
+		jogoDaVelha.inserirBola(0, 1);
+		jogoDaVelha.inserirBola(0, 2);
+		
 		boolean verificarBola = jogoDaVelha.verificarBolaPrimeiraLinha();		
-		assertTrue(verificarBola);					
+		assertTrue(verificarBola);
 	}
 }

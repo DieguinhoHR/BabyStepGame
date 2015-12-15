@@ -40,6 +40,16 @@ public class JogoDaVelha {
 	}
 
 	public boolean verificarBolaPrimeiraLinha() {
+		
+		if(velha[0][0] != 1)
+			return false;
+				
+		if(velha[0][1] != 1)
+			return false;
+		
+		if(velha[0][2] != 1)
+			return false;		
+		
 		return true;
 	}
 }

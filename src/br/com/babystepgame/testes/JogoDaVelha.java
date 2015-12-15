@@ -63,28 +63,22 @@ public class JogoDaVelha {
 	}
 
 	public boolean verificaPrimeiraDiagonal() {
-		if (velha[0][0] != 1)
-			return false;
 		
-		if (velha[1][1] != 1)
-			return false;
-
-		if (velha[2][2] != 1)
-			return false;
-		
-		return true;
+		for (int i = 0; i <= 2; i++) {
+			if(velha[i][i] == 1 && velha[i][i] == 1 && velha[i][i] == 1)
+				return true;
+		}
+		return false;
 	}	
 	
 	public boolean verificaSegundaDiagonal() {
-		if (velha[0][2] != 1)
-			return false;
 		
-		if (velha[1][1] != 1)
-			return false;
-
-		if (velha[2][0] != 1)
-			return false;
-		
-		return true;
+		int j=2;
+		for (int i = 0; i <= 2; i++) {
+			if(velha[i][j] == 1 && velha[i][j] == 1 && velha[i][j] == 1)
+				return true;
+			j--;
+		}
+		return false;				
 	}		
 }

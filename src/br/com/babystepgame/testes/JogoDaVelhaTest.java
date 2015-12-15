@@ -26,4 +26,13 @@ public class JogoDaVelhaTest {
 		
 		assertEquals(2, jogoDaVelha.velha[0][0]);				
 	}	
+	
+	@Test
+	public void testDeveInserirBolaForaDaMatriz() {		
+		boolean retornoDoInserirXis = jogoDaVelha.inserirXis(4, 0);
+		
+		assertFalse(retornoDoInserirXis);
+		
+		//assertEquals(2, jogoDaVelha.velha[4][0]);				
+	}	
 }
